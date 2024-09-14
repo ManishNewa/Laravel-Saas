@@ -9,9 +9,10 @@ class Talk extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];    
+    protected $guarded = ['id'];
 
-    public function author(){
+    public function author()
+    {
         return $this->belongsTo(User::class);
     }
 }
