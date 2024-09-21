@@ -21,7 +21,6 @@ class ConferenceFactory extends Factory
         $cfpStartsAt = $startsAt->clone()->subMonths(4);
         $cfpEndsAt = $cfpStartsAt->clone()->addMonths(2);
 
-
         return [
             'title' => fake()->sentence(),
             'location' => fake()->city() . ', ' . fake()->country(),
@@ -30,7 +29,7 @@ class ConferenceFactory extends Factory
             'starts_at' => $startsAt,
             'ends_at' => $endsAt,
             'cfp_starts_at' => $cfpStartsAt,
-            'cfp_ends_at' => $cfpEndsAt
+            'cfp_ends_at' => $cfpEndsAt,
 
         ];
     }
